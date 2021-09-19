@@ -8,3 +8,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "TimeTokTok"
 include ':app'
+include ':data'
+include ':presentation'
+include ':domain'
