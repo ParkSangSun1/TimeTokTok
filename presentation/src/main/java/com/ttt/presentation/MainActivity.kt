@@ -1,4 +1,4 @@
-package com.ttt.timetoktok
+package com.ttt.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

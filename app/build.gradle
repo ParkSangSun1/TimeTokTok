@@ -1,13 +1,15 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
     compileSdk 30
 
     defaultConfig {
-        applicationId "com.study.timetoktok"
+        applicationId "com.ttt.timetoktok"
         minSdk 21
         targetSdk 30
         versionCode 1
@@ -44,5 +46,12 @@ dependencies {
     implementation project(":data")
     implementation project(":domain")
     implementation project(":presentation")
+
+
+    // dager hilt
+    implementation "com.google.dagger:hilt-android:2.38.1"
+    kapt "com.google.dagger:hilt-android-compiler:2.38.1"
+    implementation 'androidx.hilt:hilt-lifecycle-viewmodel:1.0.0-alpha03'
+    kapt 'androidx.hilt:hilt-compiler:1.0.0'
 
 }
